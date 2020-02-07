@@ -1,0 +1,5 @@
+**/.eslintrc
+**/*.spec.ts
+.gitignore
+.nycrc
+test

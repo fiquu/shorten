@@ -1,0 +1,10 @@
+{
+  "extends": "../.eslintrc",
+  "env": {
+    "mocha": true
+  },
+  "rules": {
+    "max-lines-per-function": "off",
+    "max-lines": "off"
+  }
+}

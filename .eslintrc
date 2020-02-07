@@ -1,0 +1,7 @@
+{
+  "extends": "@fiquu",
+  "root": true,
+  "env": {
+    "node": true
+  }
+}
