@@ -1,5 +1,5 @@
 {
-  "extends": "../.eslintrc",
+  "extends": "@fiquu",
   "env": {
     "mocha": true
   },

@@ -24,23 +24,11 @@ export interface ShortenOptions {
 }
 
 /**
- * Shorten function signature.
- */
-export interface ShortenFunction {
-  (value: string, options?: ShortenOptions): string;
-}
-
-/**
  * Shortens (truncates) a string to a max length keeping whole words by
  * default.
  *
  * @param {string} value The string to shorten.
  * @param {ShortenOptions} options The options object.
- * @param {string} options.value The value to truncate.
- * @param {number} options.length The max chars to display. Defaults to `10`.
- * @param {string} options.ellipsis The ellipsis to show if string is truncated. Defaults to `...`.
- * @param {boolean} options.words Whether to trim on the last word or any character. Defaults to `true`.
- * @param {boolean} options.lax Whether to not include ellipsis' length in the maximum length. Defaults to `false`.
  *
  * @returns {string} The truncated string.
  */

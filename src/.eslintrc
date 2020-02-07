@@ -1,16 +1,4 @@
 {
   "root": true,
-  "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint"
-  ],
-  "extends": [
-    "../.eslintrc",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
-  "rules": {
-    "node/no-unsupported-features/es-syntax": "off",
-    "node/no-missing-import": "off"
-  }
+  "extends": "@fiquu"
 }
