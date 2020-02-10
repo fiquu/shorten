@@ -6,8 +6,9 @@
   "scripts": {
     "test": "nyc mocha -r ts-node/register test/**/*.spec.ts",
     "postversion": "git push --follow-tags",
-    "build": "tsc && typedoc",
-    "pack": "npm run build"
+    "build": "tsc && npm run docs",
+    "docs": "typedoc",
+    "prepack": "tsc"
   },
   "repository": {
     "type": "git",
