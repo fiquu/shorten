@@ -3,4 +3,5 @@
 typedoc.json
 .gitignore
 .nycrc
+docs
 test
