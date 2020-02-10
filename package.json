@@ -5,9 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "nyc mocha -r ts-node/register test/**/*.spec.ts",
-    "build": "tsc & typedoc",
-    "prepublish": "build",
-    "pack": "tsc"
+    "pack": "tsc && typedoc"
   },
   "repository": {
     "type": "git",
@@ -34,6 +32,7 @@
     "@types/node": "^13.7.0"
   },
   "devDependencies": {
+    "@fiquu/eslint-config": "^2.0.0",
     "@types/chai": "^4.2.8",
     "@types/faker": "^4.1.9",
     "@types/mocha": "^7.0.1",
@@ -41,9 +40,6 @@
     "@typescript-eslint/parser": "^2.19.0",
     "chai": "^4.2.0",
     "eslint": "^6.8.0",
-    "eslint-plugin-mocha": "^6.2.2",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-security": "^1.4.0",
     "faker": "^4.1.0",
     "mocha": "^7.0.1",
     "nyc": "^15.0.0",
