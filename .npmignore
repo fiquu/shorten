@@ -1,5 +1,6 @@
 **/.eslintrc
 **/*.spec.ts
+typedoc.json
 .gitignore
 .nycrc
 test

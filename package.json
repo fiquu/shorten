@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "nyc mocha -r ts-node/register test/**/*.spec.ts",
-    "pack": "tsc && typedoc"
+    "build": "tsc && typedoc",
+    "pack": "npm run build"
   },
   "repository": {
     "type": "git",
