@@ -1,6 +1,3 @@
-/**
- * Shorten options.
- */
 export interface ShortenOptions {
   /**
    * Maximum string length.
