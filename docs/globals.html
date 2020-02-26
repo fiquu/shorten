@@ -2385,14 +2385,30 @@ img {
 <div class="container container-main">
 	<div class="content-wrap">
 		<div class="tsd-panel tsd-typography">
-			<a href="#shorten" id="shorten" style="color: inherit; text-decoration: none;">
-				<h1>Shorten</h1>
+			<a href="#fiquushorten" id="fiquushorten" style="color: inherit; text-decoration: none;">
+				<h1>@fiquu/shorten</h1>
 			</a>
-			<p>Shortens a string (truncate) optionally keeping whole words.</p>
+			<p><a href="https://travis-ci.org/fiquu/shorten"><img src="https://travis-ci.org/fiquu/shorten.svg?branch=master" alt="Build Status"></a>
+				<img src="https://img.shields.io/github/license/fiquu/shorten" alt="GitHub">
+				<img src="https://img.shields.io/github/last-commit/fiquu/shorten" alt="GitHub last commit">
+				<img src="https://img.shields.io/npm/v/@fiquu/shorten" alt="npm (scoped)">
+			<img src="https://img.shields.io/npm/dw/@fiquu/shorten" alt="npm"></p>
+			<p>Shortens a string (truncate) keeping whole words by default.</p>
+			<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+				<h2>Installation</h2>
+			</a>
+			<pre><code class="language-sh">npm i @fiquu/shorten</code></pre>
+			<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+				<h2>Usage</h2>
+			</a>
+			<pre><code class="language-ts"><span class="hljs-keyword">import</span> shorten <span class="hljs-keyword">from</span> <span class="hljs-string">`@fiquu/shorten`</span>;
+
+<span class="hljs-keyword">const</span> short = shorten(<span class="hljs-string">'Some long string to shorten with many possible words to split into.'</span>);
+<span class="hljs-comment">// 'Some long string to shorten with many possible...'</span></code></pre>
 			<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
 				<h2>Documentation</h2>
 			</a>
-			<p>See: <a href="https://fiquu.github.io/shorten/">https://fiquu.github.io/shorten/</a></p>
+			<p>See <a href="https://fiquu.github.io/shorten/">https://fiquu.github.io/shorten/</a> for more info and options.</p>
 		</div>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
@@ -2429,7 +2445,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">defaults<span class="tsd-signature-symbol">:</span> <a href="interfaces/shortenoptions.html" class="tsd-signature-type">ShortenOptions</a><span class="tsd-signature-symbol"> = Object.freeze&lt;ShortenOptions&gt;({ellipsis: &#x27;...&#x27;,words: true,length: 50,lax: false})</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/fiquu/shorten/blob/81850d0/src/index.ts#L26">index.ts:26</a></li>
+						<li>Defined in <a href="https://github.com/fiquu/shorten/blob/eb2499c/src/index.ts#L26">index.ts:26</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2451,13 +2467,12 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/shorten/blob/81850d0/src/index.ts#L86">index.ts:86</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/shorten/blob/eb2499c/src/index.ts#L84">index.ts:84</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Shortens (truncates) a string to a max length keeping whole words by
-								default.</p>
+								<p>Shortens (truncates) a string to a max length keeping whole words by default.</p>
 							</div>
 							<dl class="tsd-comment-tags">
 								<dt>example</dt>
@@ -2494,13 +2509,13 @@ img {
 				<a name="trimtolength" class="tsd-anchor"></a>
 				<h3>trim<wbr>ToLength</h3>
 				<ul class="tsd-signatures tsd-kind-function">
-					<li class="tsd-signature tsd-kind-icon">trim<wbr>ToLength<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="interfaces/shortenoptions.html" class="tsd-signature-type">ShortenOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					<li class="tsd-signature tsd-kind-icon">trim<wbr>ToLength<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, ellipsis<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, lax<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/shorten/blob/81850d0/src/index.ts#L41">index.ts:41</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/shorten/blob/eb2499c/src/index.ts#L43">index.ts:43</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2517,9 +2532,21 @@ img {
 								</div>
 							</li>
 							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="interfaces/shortenoptions.html" class="tsd-signature-type">ShortenOptions</a></h5>
+								<h5>length: <span class="tsd-signature-type">number</span></h5>
 								<div class="tsd-comment tsd-typography">
-									<p>The shorten options object.</p>
+									<p>The maximum string length.</p>
+								</div>
+							</li>
+							<li>
+								<h5>ellipsis: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The ellipsis string to use.</p>
+								</div>
+							</li>
+							<li>
+								<h5>lax: <span class="tsd-signature-type">boolean</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Whether to not include ellipsis length on the maximum length.</p>
 								</div>
 							</li>
 						</ul>
@@ -2532,13 +2559,13 @@ img {
 				<a name="trimtowords" class="tsd-anchor"></a>
 				<h3>trim<wbr>ToWords</h3>
 				<ul class="tsd-signatures tsd-kind-function">
-					<li class="tsd-signature tsd-kind-icon">trim<wbr>ToWords<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="interfaces/shortenoptions.html" class="tsd-signature-type">ShortenOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					<li class="tsd-signature tsd-kind-icon">trim<wbr>ToWords<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, ellipsis<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/shorten/blob/81850d0/src/index.ts#L56">index.ts:56</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/shorten/blob/eb2499c/src/index.ts#L57">index.ts:57</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2555,9 +2582,9 @@ img {
 								</div>
 							</li>
 							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="interfaces/shortenoptions.html" class="tsd-signature-type">ShortenOptions</a></h5>
+								<h5>ellipsis: <span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
-									<p>The shorten options object.</p>
+									<p>The ellipsis string to use.</p>
 								</div>
 							</li>
 						</ul>
