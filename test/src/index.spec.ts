@@ -21,10 +21,10 @@ describe('Shorten', function () {
     expect(short).to.be.a('string').that.equals('Some');
   });
 
-  it('should shorten a long string', function () {
-    const short = shorten('Some long string to shorten.');
+  it('should shorten a long string using default length', function () {
+    const short = shorten('Some long string to shorten with many possible words to split into.');
 
-    expect(short).to.be.a('string').that.equals('Some...');
+    expect(short).to.be.a('string').that.equals('Some long string to shorten with many possible...');
   });
 
   it('should shorten a long string with arbitrary length', function () {
