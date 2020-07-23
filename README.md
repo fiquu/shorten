@@ -6,7 +6,7 @@
 ![npm (scoped)](https://img.shields.io/npm/v/@fiquu/shorten)
 ![npm](https://img.shields.io/npm/dw/@fiquu/shorten)
 
-Shortens a string (truncate) keeping whole words by default.
+Dependency-free and configurable tool to shorten (truncate) a string keeping whole words by default.
 
 ## Installation
 
@@ -24,4 +24,5 @@ const short = shorten('Some long string to shorten with many possible words to s
 ```
 
 ## Documentation
-See https://fiquu.github.io/shorten/ for more info and options.
+
+See [the documentaion page](https://fiquu.github.io/shorten/) for more info and options.
