@@ -1,6 +1,6 @@
 {
   "name": "@fiquu/shorten",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Shortens a string (truncate) optionally keeping whole words.",
   "main": "lib/index.js",
   "scripts": {
