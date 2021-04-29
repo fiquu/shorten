@@ -40,11 +40,16 @@ const defaults: ShortenOptions = Object.freeze<ShortenOptions>({
  *
  * @returns {string} The trimmed string.
  */
-function trimToLength(value: string, length: number, ellipsis: string, lax: boolean): string {
+const trimToLength = (
+  value: string,
+  length: number,
+  ellipsis: string,
+  lax: boolean
+): string => {
   const pad: number = lax ? 0 : ellipsis.length;
 
   return value.substr(0, length - pad);
-}
+};
 
 /**
  * Trims a string to words.
@@ -54,13 +59,13 @@ function trimToLength(value: string, length: number, ellipsis: string, lax: bool
  *
  * @returns {string} The trimmed string.
  */
-function trimToWords(value: string, ellipsis: string): string {
+const trimToWords = (value: string, ellipsis: string): string => {
   const lastSpace: number = value.lastIndexOf(' ');
   const index: number = Math.min(value.length, lastSpace);
   const adjusted: string = value.substr(0, index);
 
   return `${adjusted}${ellipsis}`;
-}
+};
 
 /**
  * Shortens (truncates) a string to a max length keeping whole words by default.
@@ -81,7 +86,7 @@ function trimToWords(value: string, ellipsis: string): string {
  *
  * @returns {string} The shortened (truncated) string.
  */
-export default function shorten(value: string, options?: ShortenOptions): string {
+const shorten = (value: string, options?: ShortenOptions): string => {
   const { length, ellipsis, words, lax }: ShortenOptions = {
     ...defaults,
     ...options
@@ -102,4 +107,6 @@ export default function shorten(value: string, options?: ShortenOptions): string
   }
 
   return `${trimmed}${ellipsis}`;
-}
+};
+
+export default shorten;
