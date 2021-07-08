@@ -17,7 +17,7 @@ npm i @fiquu/shorten
 ## Usage
 
 ```ts
-import shorten from `@fiquu/shorten`;
+import shorten from '@fiquu/shorten';
 
 const short = shorten('Some long string to shorten with many possible words to split into.');
 // 'Some long string to shorten with many possible...'
